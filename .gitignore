@@ -18,6 +18,7 @@ capybara-*.html
 /vendor/bundle
 /log/*
 /tmp/*
+/config/deploy.rb
 /public/system/*
 /coverage/
 /spec/tmp/*

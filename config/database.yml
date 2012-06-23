@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: NerdBrigade_production
   pool: 5
-  username: root
-  password:
+  username: daybreaker
+  password: groovy!2
   socket: /var/run/mysqld/mysqld.sock
