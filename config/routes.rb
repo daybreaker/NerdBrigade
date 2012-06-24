@@ -6,7 +6,7 @@ NerdBrigade::Application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Monologue relies on it being the default of "monologue"
   root to: 'monologue/posts#index'
-  mount Monologue::Engine, :at => '/' # or whatever path, be it "/blog" or "/monologue"
+  mount Monologue::Engine, :at => '/blog' # or whatever path, be it "/blog" or "/monologue"
 
 
   # The priority is based upon order of creation:

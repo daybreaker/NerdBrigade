@@ -38,7 +38,12 @@ module NerdBrigade
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-
+    
+    # Use Haml in template generators
+    config.generators do |g|
+      g.template_engine :haml
+    end
+    
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types
