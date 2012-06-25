@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require modernizr-2.5.3-respond-1.1.0.min
 //= require_tree .
+//= require_tree ./bootstrap

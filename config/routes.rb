@@ -1,11 +1,13 @@
 NerdBrigade::Application.routes.draw do
 
+  resources :newsfeeds
+
+  root to: 'newsfeeds#index'
   # This line mounts Monologue's routes at the root of your application.
   # This means, any requests to URLs such as /my-post, will go to Monologue::PostsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Monologue relies on it being the default of "monologue"
-  root to: 'monologue/posts#index'
   mount Monologue::Engine, :at => '/blog' # or whatever path, be it "/blog" or "/monologue"
 
 
@@ -56,13 +58,6 @@ NerdBrigade::Application.routes.draw do
   #     resources :products
   #   end
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
-
   # See how all your routes lay out with "rake routes"
 
-  # This is a legacy wild controller route that's not recommended for RESTful applications.
-  # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
 end
