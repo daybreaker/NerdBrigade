@@ -1,3 +1,27 @@
 // Place all the styles related to the newsfeeds controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar .nav > li > span.text {
+  float: none;
+  padding: 9px 10px 11px;
+  line-height: 19px;
+  color: #999;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+}
+
+.navbar .nav .active > span.text, 
+.navbar .nav .active > span.text:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #222;
+}

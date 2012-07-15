@@ -1,0 +1,12 @@
+- @news.entries.each_slice(3) do |batch|
+  .row
+  - batch.entries.each do |entry|
+    .span4{:style => 'width: 290px'}
+      %h2
+        =entry.title
+      %p
+        =entry.summary
+      %p
+        =link_to raw("Read More &raquo;") , entry.links.first, :class => "btn"
+.clear
+!= ap @news.entries.first
